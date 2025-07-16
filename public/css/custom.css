@@ -1,0 +1,127 @@
+/* Grid container */
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Card style */
+.product-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.product-card .desc {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.product-card .category {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.product-card .category span {
+    color: #007bff;
+    font-weight: 500;
+}
+
+.product-card .price {
+    font-size: 18px;
+    color: #ff6600;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn-detail, .btn-cart {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-detail {
+    background: #17a2b8;
+    color: white;
+}
+
+.btn-detail:hover {
+    background: #138496;
+}
+
+.btn-cart {
+    background: #28a745;
+    color: white;
+}
+
+.btn-cart:hover {
+    background: #218838;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    border: 1px solid #eee;
+    transition: 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.btn {
+    width: 100%;
+    font-size: 0.9rem;
+    border-radius: 6px;
+}
+.btn-detail {
+    background-color: #fff;
+    border: 1px solid #0d6efd;
+    color: #0d6efd;
+}
+.btn-detail:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
+.btn-cart {
+    background-color: #198754;
+    color: #fff;
+}
+.btn-cart:hover {
+    background-color: #157347;
+}
